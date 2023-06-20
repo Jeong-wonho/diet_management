@@ -22,5 +22,11 @@ const UserSchema = new Schema({
     goalWeight: {
         type: Number,
         required: false
+    },
+    goalCalory: {
+        type: Number,
+        required: false
     }
-})
+});
+
+module.exports = mongoose.model("User", UserSchema);
