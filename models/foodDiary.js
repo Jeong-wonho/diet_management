@@ -8,5 +8,6 @@ const FoodDiarySchema = new Schema({
     createdAt: {type: Date, default: Date.now},
     mealsAt: {type: String, required: true},
     modifiedAt: {type: Date, required: false}
-
 })
+
+module.exports = mongoose.model("FoodDiary", FoodDiarySchema);
